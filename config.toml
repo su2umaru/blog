@@ -67,3 +67,7 @@ theme = "uBlogger"
   [markup.highlight]
     # false is a necessary configuration
     noClasses = false
+
+# Author config
+[author]
+  name = "upagge.en"
