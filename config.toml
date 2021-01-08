@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 # [en, zh-cn, fr, ...] determines default content language
-defaultContentLanguage = "ja"
+defaultContentLanguage = "en"
 # language code
 languageCode = "ja"
 title = "My New Hugo Site"
