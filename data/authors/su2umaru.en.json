@@ -1,9 +1,10 @@
 {
   "name": "su2umaru",
   "nickname": "su2umaru",
-  "about": "Trusted user pc",
-  "avatar": "https://upagge.ru/img/ava.jpg",
-  "link": "https://twitter.com/su2umaru",
+  "about": "Python, Go, JavaScript を書く ML/Webエンジニア",
+  "avatar": "https://github.com/su2umaru.png",
+  "link": "",
   "email": "",
-  "ps": "If you like this topic, put an asterisk in GitHub, it will be a pleasure for me"
+  "ps": "",
+  "social": "<a href='https://github.com/su2umaru' target='_blank'><i class='fab fa-github'></i></a> <a href='https://twitter.com/su2umaru' target='_blank'><i class='fab fa-twitter'></i></a>"
 }
