@@ -3,7 +3,7 @@ baseURL = "http://example.org/"
 defaultContentLanguage = "en"
 # language code
 languageCode = "ja"
-title = "My New Hugo Site"
+title = "su2umarathon"
 
 hasCJKLanguage = true
 
@@ -25,11 +25,11 @@ theme = "uBlogger"
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar.png"
+      avatarURL = "https://github.com/su2umaru.png"
       # title shown in home page (HTML format is supported)
-      title = ""
+      title = "su2umaru / すずまる"
       # subtitle shown in home page (HTML format is supported)
-      subtitle = "A Clean, Elegant but Advanced Hugo Theme"
+      subtitle = "Python, Go, JavaScript を書く ML/Webエンジニア"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -61,10 +61,10 @@ theme = "uBlogger"
       logo = ""
       # title name
       # 标题名称
-      name = "uBlogger"
+      name = "su2umarathon"
       # you can add extra information before the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
-      pre = "<i class='fas fa-pencil-alt fa-fw'></i>"
+      pre = "<i class='fas fa-running'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
       # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
       post = ""
@@ -218,6 +218,21 @@ theme = "uBlogger"
       Skype = false
       Trello = false
       Mix = false
+  # TypeIt config
+  # TypeIt 配置
+  [params.typeit]
+    # typing speed between each step (measured in milliseconds)
+    # 每一步的打字速度 (单位是毫秒)
+    speed = 100
+    # blinking speed of the cursor (measured in milliseconds)
+    # 光标的闪烁速度 (单位是毫秒)
+    cursorSpeed = 1000
+    # character used for the cursor (HTML format is supported)
+    # 光标的字符 (支持 HTML 格式)
+    cursorChar = "|"
+    # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
+    # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
+    duration = -1
 
 [menu]
   [[menu.main]]
