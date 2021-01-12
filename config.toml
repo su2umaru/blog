@@ -10,11 +10,51 @@ hasCJKLanguage = true
 # Change the default theme to be use when building the site with Hugo
 theme = "uBlogger"
 
+# whether to use robots.txt
+# 是否使用 robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+# 是否使用 git 信息
+enableGitInfo = true
+# whether to use emoji code
+# 是否使用 emoji 代码
+enableEmoji = true
+
 [params]
   # uBlogger theme version
   version = "1.2.X"
   # site default theme ("light", "dark", "auto")
   defaultTheme = "auto"
+  # site description
+  description = "su2umaru's Blog"
+  # site keywords
+  keywords = ["Python", "Go", "JavaScript", "機械学習", "Web", "エンジニア"]
+  # public git repo url only then enableGitInfo is true
+  # 公共 git 仓库路径，仅在 enableGitInfo 设为 true 时有效
+  gitRepo = "https://github.com/su2umaru/blog"
+  # which hash function used for SRI, when empty, no SRI is used ("sha256", "sha384", "sha512", "md5")
+  # 哪种哈希函数用来 SRI, 为空时表示不使用 SRI ("sha256", "sha384", "sha512", "md5")
+  fingerprint = ""
+  # date format
+  # 日期格式
+  dateFormat = "2006-01-02"
+  # website images for Open Graph and Twitter Cards
+  # 网站图片, 用于 Open Graph 和 Twitter Cards
+  images = ["/logo.png"]
+  # App icon config
+  [params.app]
+    # optional site title override for the app when added to an iOS home screen or Android launcher
+    title = "su2umarathon"
+    # whether to omit favicon resource links
+    noFavicon = false
+    # modern SVG favicon to use in place of older style .png and .ico files
+    svgFavicon = ""
+    # Android browser theme color
+    themeColor = "#ffffff"
+    # Safari mask icon color
+    iconColor = "#5bbad5"
+    # Windows v8-10 tile color
+    tileColor = "#da532c"
   # Home page config
   [params.home]
     # amount of RSS pages
@@ -71,7 +111,7 @@ theme = "uBlogger"
       # whether to use typeit animation for title name
       # 是否为标题显示打字机动画
       typeit = false
-    # Footer config
+  # Footer config
   # 页面底部信息配置
   [params.footer]
     enable = true
@@ -171,53 +211,25 @@ theme = "uBlogger"
       # the maximum number of lines of displayed code by default
       # 默认展开显示的代码行数
       maxShownLines = 10
-    # KaTeX mathematical formulas config (KaTeX https://katex.org/)
-    # KaTeX 数学公式配置 (KaTeX https://katex.org/)
-    [params.page.math]
-      enable = false
-      # default block delimiter is $$ ... $$ and \\[ ... \\]
-      # 默认块定界符是 $$ ... $$ 和 \\[ ... \\]
-      blockLeftDelimiter = ""
-      blockRightDelimiter = ""
-      # default inline delimiter is $ ... $ and \\( ... \\)
-      # 默认行内定界符是 $ ... $ 和 \\( ... \\)
-      inlineLeftDelimiter = ""
-      inlineRightDelimiter = ""
-      # KaTeX extension copy_tex
-      # KaTeX 插件 copy_tex
-      copyTex = true
-      # KaTeX extension mhchem
-      # KaTeX 插件 mhchem
-      mhchem = true
+    # Social share links in post page
+    # 文章页面的分享信息设置
     [params.page.share]
       enable = true
       Twitter = true
       Facebook = true
-      Linkedin = false
-      Whatsapp = false
-      Pinterest = false
-      Tumblr = false
-      HackerNews = true
-      Reddit = false
-      VK = false
-      Buffer = false
-      Xing = false
-      Line = false
-      Instapaper = false
-      Pocket = false
-      Digg = false
-      Stumbleupon = false
-      Flipboard = false
-      Weibo = false
-      Renren = false
-      Myspace = false
-      Blogger = false
-      Baidu = false
-      Odnoklassniki = false
-      Evernote = false
-      Skype = false
-      Trello = false
-      Mix = false
+      Pocket = true
+    # Page SEO config
+    # 页面 SEO 配置
+    [params.page.seo]
+      # image URL
+      # 图片 URL
+      images = []
+      # Publisher info
+      # 出版者信息
+      [params.page.seo.publisher]
+        name = "xxxx"
+        logoUrl = "https://github.com/su2umaru.png"
+
   # TypeIt config
   # TypeIt 配置
   [params.typeit]
@@ -233,6 +245,76 @@ theme = "uBlogger"
     # cursor duration after typing finishing (measured in milliseconds, "-1" means unlimited)
     # 打字结束之后光标的持续时间 (单位是毫秒, "-1" 代表无限大)
     duration = -1
+
+  # Site SEO config
+  # 网站 SEO 配置
+  [params.seo]
+    # image URL
+    # 图片 URL
+    image = "/images/Apple-Devices-Preview.png"
+    # thumbnail URL
+    # 缩略图 URL
+    thumbnailUrl = "/images/screenshot.png"
+
+  # Analytics config
+  # 网站分析配置
+  [params.analytics]
+    enable = true
+    # Google Analytics
+    [params.analytics.google]
+      # [UA-XXXXXXXX-X] google analytics code
+      # [UA-XXXXXXXX-X] 谷歌分析代号
+      id = ""
+      # whether to use gtag linked
+      # 是否使用gtag链接
+      gtag = false
+      # whether to anonymize IP
+      # 是否匿名化用户 IP
+      anonymizeIP = true
+    # Fathom Analytics
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      # 自行托管追踪器时的主机路径
+      server = ""
+    [params.analytics.yandex]
+      id = "70532758"
+
+  # Cookie consent config
+  # Cookie 许可配置
+  [params.cookieconsent]
+    enable = false
+    # text strings used for Cookie consent banner
+    # 用于 Cookie 许可横幅的文本字符串
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
+
+  # CDN config for third-party library files
+  # 第三方库文件的 CDN 设置
+  [params.cdn]
+    # CDN data file name, disabled by default
+    # ("jsdelivr.yml")
+    # located in "themes/uBlogger/assets/data/cdn/" directory
+    # you can store your own data files in the same path under your project:
+    # "assets/data/cdn/"
+    # CDN 数据文件名称, 默认不启用
+    # ("jsdelivr.yml")
+    # 位于 "themes/uBlogger/assets/data/cdn/" 目录
+    # 可以在你的项目下相同路径存放你自己的数据文件:
+    # "assets/data/cdn/"
+    data = "jsdelivr.yml"
+
+  # Compatibility config
+  # 兼容性设置
+  [params.compatibility]
+    # whether to use Polyfill.io to be compatible with older browsers
+    # 是否使用 Polyfill.io 来兼容旧式浏览器
+    polyfill = false
+    # whether to use object-fit-images to be compatible with older browsers
+    # 是否使用 object-fit-images 来兼容旧式浏览器
+    objectFit = false
 
 [menu]
   [[menu.main]]
@@ -272,12 +354,84 @@ theme = "uBlogger"
     weight = 4
 
 # Markup related configuration in Hugo
+# Hugo 解析文档的配置
 [markup]
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
-    # false is a necessary configuration
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
     noClasses = false
+  # Goldmark is from Hugo 0.60 the default library used for Markdown
+  # Goldmark 是 Hugo 0.60 以来的默认 Markdown 解析库
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      # 是否在文档中直接使用 HTML 标签
+      unsafe = true
+  # Table Of Contents settings
+  # 目录设置
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 6
 
 # Author config
 [author]
   name = "su2umaru"
+
+# Sitemap config
+# 网站地图配置
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
+# Permalinks config (https://gohugo.io/content-management/urls/#permalinks)
+# Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
+[Permalinks]
+  # posts = ":year/:month/:filename"
+  posts = ":filename"
+
+# Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
+# 隐私信息配置 (https://gohugo.io/about/hugo-and-gdpr/)
+[privacy]
+  # privacy of the Google Analytics (replaced by params.analytics.google)
+  # Google Analytics 相关隐私 (被 params.analytics.google 替代)
+  [privacy.googleAnalytics]
+    # ...
+  [privacy.twitter]
+    enableDNT = true
+  [privacy.youtube]
+    privacyEnhanced = true
+
+# Options to make output .md files
+# 用于输出 Markdown 格式文档的设置
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+# Options to make output .md files
+# 用于输出 Markdown 格式文档的设置
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# Options to make hugo output files
+# 用于 Hugo 输出文档的设置
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
