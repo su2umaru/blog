@@ -1,5 +1,5 @@
 ---
-title: "Hugoでブログを作りました"
+title: "ブログを開設しました"
 date: 2021-01-17T19:46:41+09:00
 lastmod: 2021-01-17T19:46:41+09:00
 draft: true
@@ -9,7 +9,7 @@ resources:
 - name: "featured-image"
   src: "featured-image.jpg"
 
-tags: ["Hugo"]
+tags: ["ポエム"]
 categories: ["ブログ"]
 
 toc:
@@ -17,7 +17,7 @@ toc:
 lightgallery: true
 ---
 
-はじめまして、<a href="https://twitter.com/su2umaru" target="_blank">@su2umaru</a> です。ブログを開設しました。タイトルは su2umarathon です。
+はじめまして、[@su2umaru](https://twitter.com/su2umaru) です。ブログを開設しました。タイトルは su2umarathon です。
 
 <!--more-->
 
