@@ -95,7 +95,29 @@ lightgallery: true
 
 ## 自作ブログを開発する
 
+「どのようにブログを開設するか」
 
+ブログを開設する手段を調べました。
+
+- [Qiita](https://qiita.com/)
+- [はてなブログ](https://hatenablog.com/)
+- [note](https://note.com/)
+- 自作ブログ
+
+「イケてるブログが良い」
+
+選ばれたのは、自作ブログでした。
+
+自作ブログを開発する手段を調べました。
+
+- [Gatsby.js](https://www.gatsbyjs.com/)
+- [Hugo](https://gohugo.io/)
+- [Jekyll](http://jekyllrb-ja.github.io/)
+- [Pelican](https://docs.getpelican.com/en/latest/)
+
+「イケてるテーマが良い」
+
+選ばれたのは、Hugo でした。
 
 ## 静的サイトジェネレータ Hugo
 
