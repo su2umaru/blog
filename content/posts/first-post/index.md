@@ -101,21 +101,25 @@ lightgallery: true
 
 ブログを開設する手段を調べました。
 
-- [Qiita](https://qiita.com/)
-- [はてなブログ](https://hatenablog.com/)
-- [note](https://note.com/)
-- 自作ブログ
+| 候補 | マークダウン | 知名度 | 手間 | テーマ |
+| - | - | - | - | - |
+| [Qiita](https://qiita.com/) | o | 大 | 小 | 固定 |
+| [はてなブログ](https://hatenablog.com/) | o | 大 | 小 | 固定 |
+| [note](https://note.com/)  | x | 大 | 中 | 固定 |
+| 自作ブログ | o | 小 | 大 | 自由 |
 
 「イケてるブログが良い」
 
 選ばれたのは、自作ブログでした。
 
-自作ブログを開発する手段を調べました。
+自作ブログを開発する手段を調べました。(※2021年1月28日時点)
 
-- [Gatsby.js](https://www.gatsbyjs.com/)
-- [Hugo](https://gohugo.io/)
-- [Jekyll](http://jekyllrb-ja.github.io/)
-- [Pelican](https://docs.getpelican.com/en/latest/)
+| 候補 | 言語 | GitHub Star | Fork | ブログテーマ数 |
+| - | - | - | - | - |
+| [Gatsby.js](https://www.gatsbyjs.com/) | JavaScript | 48.8k | 9.2k | 173 |
+| [Hugo](https://gohugo.io/) | Go | 49.7k | 5.6k | 255 |
+| [Jekyll](http://jekyllrb-ja.github.io/) | Ruby | 42.1k | 9.2k | 71 |
+| [Pelican](https://docs.getpelican.com/en/latest/) | Python | 10.2k | 1.7k | ? (全部で127) |
 
 「イケてるテーマが良い」
 
