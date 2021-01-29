@@ -127,4 +127,35 @@ lightgallery: true
 
 ## 静的サイトジェネレータ Hugo
 
+[Hugo](https://gohugo.io/) について調べました。
+
+- 静的サイトジェネレータ
+- 高速
+- 柔軟
+- マークダウン対応
+- [@p1ass](https://twitter.com/p1ass) さんの[ブログ](https://blog.p1ass.com/)と [@sanpo_shiho](https://twitter.com/sanpo_shiho) さんの[ブログ](https://sanposhiho.com/)で使われている
+
+「つよそう」
+
+そのまま[公式チュートリアル](https://gohugo.io/getting-started/quick-start/)を始めました。
+
+「完全に理解した」
+
+はい、いつものやつです。テンションが上がったので[テーマ](https://themes.gohugo.io/)を眺めました。とりあえず Tags から Blog を指定しました。
+
+「イケてるテーマがたくさんある」
+
+個人的に [Gatsby.js のテーマ](https://www.gatsbyjs.com/starters/) より気に入るものが多かったです。どうでもいいですが形容詞+敬語が苦手です。動詞+敬語はきれいなのに、形容詞+敬語はタラちゃんになるのどうして。
+
+Hugo にイケてるテーマが多かったので、先にほしい機能を洗い出しました。
+
+- マークダウン対応
+- タグ
+- 目次
+- SNS シェア
+- ダーク/ライト切り替え
+- サムネイル
+
+最終的に [uBlogger](https://themes.gohugo.io/ublogger/) を選びました。この記事を読んでくださっている方、せっかくなので SNS シェアやダーク/ライト切り替えといった機能を使ってみてください。
+
 ## これからよろしくお願いします
