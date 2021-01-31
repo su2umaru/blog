@@ -2,7 +2,7 @@
 title: "ブログを開設しました"
 date: 2021-01-17T19:46:41+09:00
 lastmod: 2021-01-17T19:46:41+09:00
-draft: true
+draft: false
 description: "はじめまして、su2umaru (すずまる) です。ブログを開設しました。タイトルは su2umarathon です。"
 
 resources:
