@@ -33,7 +33,7 @@ enableEmoji = true
   # date format
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
-  images = ["/images/logo.jpg"]
+  images = ["/logo.jpg"]
   # App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
