@@ -172,10 +172,10 @@ enableEmoji = true
     # Page SEO config
     [params.page.seo]
       # image URL
-      images = []
+      images = ["/logo.jpg"]
       # Publisher info
       [params.page.seo.publisher]
-        name = "xxxx"
+        name = "su2umaru"
         logoUrl = "https://github.com/su2umaru.png"
 
   # TypeIt config
@@ -192,9 +192,9 @@ enableEmoji = true
   # Site SEO config
   [params.seo]
     # image URL
-    image = "/images/Apple-Devices-Preview.png"
+    image = "/images/logo.jpg"
     # thumbnail URL
-    thumbnailUrl = "/images/screenshot.png"
+    thumbnailUrl = "/images/logo.jpg"
 
   # Analytics config
   [params.analytics]
