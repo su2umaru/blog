@@ -36,7 +36,7 @@ Twitter: [su2umaru](https://twitter.com/su2umaru)
 
 ## :trophy: Awards
 
-- 2019年度 JST CREST AIPチャレンジプログラム
+- 2019年度 JST CREST AIP チャレンジプログラム
 - 2020年度人工知能学会全国大会優秀賞
 
 ## :muscle: Skills
