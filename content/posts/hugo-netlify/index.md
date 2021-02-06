@@ -29,6 +29,10 @@ lightgallery: true
 
 ## Hugo のチュートリアル
 
+まずは [Hugo のチュートリアル](https://gohugo.io/getting-started/quick-start/)から取り組みました。7ステップで Hugo のインストールから静的サイトの構築までできました。
+
+「完全に理解した」
+
 ## uBlogger テーマのインストールと設定
 
 ## Netlify によるデプロイ
