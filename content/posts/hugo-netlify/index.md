@@ -37,6 +37,72 @@ lightgallery: true
 
 ## uBlogger テーマのインストールと設定
 
+チュートリアルを終えたので、いよいよ自作ブログの開発です。
+
+今回開発したいのはブログなので、[テーマ](https://themes.gohugo.io/)の Tags から Blog を指定しました。イケてるテーマが多かったので、先にほしい機能を洗い出しました。
+
+- マークダウン対応
+- タグ
+- 目次
+- SNS シェア
+- ダーク/ライト切り替え
+- サムネイル
+
+最終的に [uBlogger](https://themes.gohugo.io/ublogger/) を選びました。上記の機能を全て備えているテーマの中から、最後は直感で選びました。この記事を読んでくださっている方、せっかくなので SNS シェアやダーク/ライト切り替え機能を使ってみてください。
+
+テーマを決めていざ開発を始めたものの、すぐに手が止まりました。
+
+「ドキュメントが見当たらない」
+
+[uBlogger の GitHub](https://github.com/uPagge/uBlogger) にはドキュメントどころか、インストールの手順すら書いてありませんでした。頼れるものがないので自力で開発するしかありませんでした。試行錯誤の結果、折れました。
+
+「いきなりブログは早かったかな」
+
+「ホームページから初めてスモールスタートの方が良かったかな」
+
+かなり弱気でした。
+
+「苦しいけど、やっぱり自作ブログを完成させたい」
+
+その一心で、走り続けました。
+
+結局、今こうして皆さんがこの記事を読んでくださっているということは、無事にドキュメントが見つかったということです。なんと [uBlogger のデモページ](https://ublogger.netlify.app/theme-documentation-basics/)にありました。諦めなければなんとかなるものです。
+
+ドキュメントに沿って uBlogger をデフォルトの設定で立ち上げることに成功しました。
+
+「やっとできた」
+
+まだ完成していないのに、とても嬉しかったです。苦しんだ分だけ、見返りは大きかったです。
+
+テンションが上がったところで、勢いそのままに設定やレイアウトを変更していきました。
+
+- メニューから [Docs](https://ublogger.netlify.app/categories/documentation/) を削除した
+- [algolia](https://www.algolia.com/) による検索機能を削除した
+- SNS リンクを [GitHub](https://github.com/su2umaru) と [Twitter](https://twitter.com/su2umaru) に限定した
+- 日付表記を「2006-01-02」から「2006/01/02」に変更した
+- 記事の最後のプロフィールに [GitHub](https://github.com/su2umaru) と [Twitter](https://twitter.com/su2umaru) を追加した
+
+ここで最も気をつけなければいけないことは、テーマを直接編集しないことです。なぜならテーマはテーマの開発者によって更新されてしまうためです。その更新を反映したときに、これまでの編集が消えてしまいます。
+
+直接編集することなく設定やレイアウトを変更するために、テーマ内の編集したいファイルと同じディレクトリ構造を、自身の環境に再現します。
+
+例えば記事の最後のプロフィールを編集したい場合は `(ブログのルート)/themes/uBlogger/layouts/partials/home/profile.html` を編集するのではなく `(ブログのルート)/layouts/partials/home/profile.html` を新たに作成します。これでテーマの更新による影響を受けなくなります。ここで `(ブログのルート)/themes/uBlogger/layouts/partials/home/profile.html` を `(ブログのルート)/layouts/partials/home/profile.html` にコピーした段階でコミットしておくと編集箇所がわかりやすくなります。
+
+編集の手順をまとめておきます。
+
+1. ブラウザで編集箇所をドラッグにより選択する
+2. Inspect (`Command` + `Option` + `C`) で要素を確認する
+3. [Sourcegraph](https://about.sourcegraph.com/) ([chrome 拡張機能](https://chrome.google.com/webstore/detail/sourcegraph/dgjhfomjieaadpoljlnidmbgkdffpack)) で編集するファイルを探す
+4. VSCode でファイルを編集する
+
+Sourcegraph にはとてもお世話になりました。世の中には便利なものがたくさんあります。僕も便利なものを作る人間になりたいです。
+
+地道な作業を経て、設定やレイアウトの変更が完了しました。
+
+「僕でもできた」
+
+達成感に満たされました。
+
 ## Netlify によるデプロイ
 
 ## Google Analytics の設定
