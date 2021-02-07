@@ -111,8 +111,8 @@ Sourcegraph にはとてもお世話になりました。世の中には便利�
 
 [Hugo の公式サイト](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/)を参考にデプロイしました。
 
-## Google Analytics の設定
+## Hugo + Netlify で自作ブログを開発できました
 
-## Google Search Console の設定
+最後まで読んでくださりありがとうございます。uBlogger のドキュメントが見つからず苦しみましたが、試行錯誤の末、無事に自作ブログを開発できました。この記事を読んでくださった皆さんが Hugo + Netlify で自作ブログを開発するときに参考になると嬉しいです。
 
-## Upptime による監視
+「これからもよろしくお願いします」
