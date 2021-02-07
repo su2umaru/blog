@@ -29,7 +29,9 @@ lightgallery: true
 
 ## Hugo のチュートリアル
 
-まずは [Hugo のチュートリアル](https://gohugo.io/getting-started/quick-start/)から取り組みました。7ステップで Hugo のインストールから静的サイトの構築までできました。
+まずは [Hugo のチュートリアル](https://gohugo.io/getting-started/quick-start/)から取り組みました。7ステップで Hugo のインストールからブログの構築までできました。
+
+![チュートリアルで構築したブログ](hugo-tutorial.png)
 
 「完全に理解した」
 
