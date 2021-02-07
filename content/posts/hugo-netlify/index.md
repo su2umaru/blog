@@ -105,6 +105,12 @@ Sourcegraph にはとてもお世話になりました。世の中には便利�
 
 ## Netlify によるデプロイ
 
+ローカルで立ち上げるだけでは、皆さんが読んでくださるブログになりません。皆さんが http://localhost:1313/ にアクセスすることができても、それは皆さんの localhost であり、僕の localhost ではないためです。
+
+皆さんが読んでくださるブログにするために、デプロイする必要があります。ホスティングサービスを [Netlify](https://www.netlify.com/), [GitHub Pages](https://docs.github.com/ja/github/working-with-github-pages/about-github-pages), [Firebase](https://firebase.google.com/?hl=ja) のどれにするか迷いましたが、人気そうだったので Netlify を選びました。
+
+[Hugo の公式サイト](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/)を参考にデプロイしました。
+
 ## Google Analytics の設定
 
 ## Google Search Console の設定
