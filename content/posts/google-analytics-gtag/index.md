@@ -20,3 +20,11 @@ lightgallery: true
 [@su2umaru](https://twitter.com/su2umaru) です。ブログに Google Analytics を設定しました。Hugo で開発したサイトに Google Analytics (gtag.js バージョン) を設定する方法を書きます。
 
 <!--more-->
+
+## Google Analytics とは
+
+## Hugo で開発したサイトへの Google Analytics 設定
+
+## Google Analytics によるアクセス解析
+
+## Google Analytics で喜べるように良い記事を書きます
