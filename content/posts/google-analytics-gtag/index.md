@@ -27,4 +27,4 @@ lightgallery: true
 
 ## Google Analytics によるアクセス解析
 
-## Google Analytics で喜べるように良い記事を書きます
+## Google Analytics を見て喜べるように良い記事を書きます
