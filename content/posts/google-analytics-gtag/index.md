@@ -21,10 +21,10 @@ lightgallery: true
 
 <!--more-->
 
-## Google Analytics とは
+## アクセス解析サービス Google Analytics
 
 ## Hugo で開発したサイトへの Google Analytics 設定
 
-## Google Analytics によるアクセス解析
+## ブログのアクセス解析
 
 ## Google Analytics を見て喜べるように良い記事を書きます
