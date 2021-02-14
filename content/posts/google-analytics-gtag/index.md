@@ -27,7 +27,9 @@ Google Analytics は Google が提供するアクセス解析サービスです�
 
 [Google マーケティング プラットフォーム](https://marketingplatform.google.com/intl/ja/about/analytics/)によると、ユーザ像を詳しく分析し、ビジネスの拡大に役立つ的確なインサイトを無料で取得できる、とのことです。
 
-このブログをどのような方が、どれくらいの方が読んでくださっているのか計測したく、Hugo + Netlify で開発した自作ブログに Google Analytics を導入しました。
+「このブログをどのような方が、どれくらいの方が読んでくださっているのか計測したい」
+
+Hugo + Netlify で開発した自作ブログに Google Analytics を導入しました。
 
 ## Hugo で開発したサイトへの Google Analytics 設定
 
