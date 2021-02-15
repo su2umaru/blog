@@ -1,7 +1,7 @@
 ---
 title: "ブログに Google Analytics (gtag.js バージョン) を設定しました"
-date: 2021-02-09T19:00:00+09:00
-lastmod: 2021-02-09T19:00:00+09:00
+date: 2021-02-14T19:00:00+09:00
+lastmod: 2021-02-14T19:00:00+09:00
 draft: false
 description: "su2umaru (すずまる) です。ブログに Google Analytics を設定しました。Hugo で開発したサイトに Google Analytics (gtag.js バージョン) を設定する方法を書きます。"
 
