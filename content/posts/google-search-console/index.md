@@ -35,6 +35,8 @@ Hugo + Netlify で開発した自作ブログに Google Search Console を設定
 
 ## Hugo + Netlify で開発したサイトへの Google Search Console 設定
 
+## Google Search Console 設定完了の確認方法
+
 ## ブログの掲載順位改善
 
 ## Google 検索結果での掲載順位を改善できるように良い記事を書きます
