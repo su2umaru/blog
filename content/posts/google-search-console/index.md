@@ -35,11 +35,12 @@ Hugo + Netlify で開発した自作ブログに Google Search Console を設定
 
 ## Hugo + Netlify で開発したサイトへの Google Search Console 設定
 
-3ステップで Google Search Console を設定できます。
+4ステップで Google Search Console を設定できます。
 
 1. Google アカウントを作成する
 2. Google Search Console にドメインか URL プレフィクスを登録する
 3. 所有権を確認する
+4. サイトマップを追加する
 
 僕は既に Google アカウントを持っていたので、ステップ2から行いました。[Google Search Console のサイト](https://search.google.com/search-console/welcome?hl=ja)にアクセスすると、プロパティタイプを選択するよう促されます。
 
@@ -69,7 +70,9 @@ Snippet injection の Add snippet から設定できます。
 
 ![Snippet injection の設定](netlify-site-snippet-injection-add.png)
 
-「Netlify の Snippet injection を使わない手はない」
+所有権を確認したら、サイトマップを追加します。Google Search Console から新しいサイトマップを追加します。Hugo の場合、public ディレクトリの下に index.xml と sitemap.xml が生成されるので、サイトマップの URL を入力する欄に index.xml と sitemap.xml を入力します。
+
+![サイトマップの追加](sitemap.png)
 
 これで Google Search Console の設定は完了です。
 
