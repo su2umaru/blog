@@ -76,7 +76,11 @@ Snippet injection の Add snippet から設定できます。
 
 これで Google Search Console の設定は完了です。
 
-## Google Search Console 設定完了の確認
+## Google Search Console によるトラフィック測定開始の確認
+
+Google Search Console を設定してからトラフィックの測定が開始されるまでには数日かかりました。設定から数日後、トラフィックの測定が開始されるとメールが届きました。
+
+![Google Search Console によるトラフィック測定開始のメール](mail.png)
 
 ## ブログの掲載順位改善
 
