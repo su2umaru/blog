@@ -35,6 +35,44 @@ Hugo + Netlify で開発した自作ブログに Google Search Console を設定
 
 ## Hugo + Netlify で開発したサイトへの Google Search Console 設定
 
+3ステップで Google Search Console を設定できます。
+
+1. Google アカウントを作成する
+2. Google Search Console にドメインか URL プレフィクスを登録する
+3. 所有権を確認する
+
+僕は既に Google アカウントを持っていたので、ステップ2から行いました。[Google Search Console のサイト](https://search.google.com/search-console/welcome?hl=ja)にアクセスすると、プロパティタイプを選択するよう促されます。
+
+![Google Search Console のプロパティタイプ選択画面](google-search-console.png)
+
+ドメインか URL プレフィクスを入力できるようになっており、今回は URL プレフィクスを登録しました。このブログを Netlify でデプロイしており、ドメインを Netlify が提供するもののままにしているためです。ドメインを取得している場合、そのドメインを登録すると、すべてのサブドメインのすべての URL をアクセス解析の対象とします。
+
+Google Search Console に URL プレフィクスを登録すると、所有権を確認するよう促されます。ここでは HTML タグを選択し、表示される meta タグをコピーします。
+
+「下のメタタグをコピーして、サイトのホームページにある \<head\> セクション内の、最初の \<body\> セクションの前に貼り付けます。」と説明があります。
+
+「自分でコピペしなければいけないのか」
+
+そんなことはありませんでした。この処理を自動化してくれるのが Netlify の Snippet injection です。Snippet injection を設定するには、まず Netlify で Google Search Console を設定するサイトのメニュー Site Settings に移動します。
+
+![Netlify の Site Settings](netlify-site.png)
+
+次に Build & deploy に移動します。
+
+![Netlify の Site Settings の Build & deploy](netlify-site-build-deploy.png)
+
+Snippet injection の Add snippet から設定できます。
+
+![Snippet injection の設定](netlify-site-snippet-injection.png)
+
+メタタグを \<body\> セクションの前に貼り付けるため、「Insert before \</body\>」を選択します。また Script name にはわかりやすい名前を設定します。今回は「GoogleSearchConsole」としました。そして HTML にコピーしたメタタグを貼り付けます。
+
+![Snippet injection の設定](netlify-site-snippet-injection-add.png)
+
+「Netlify の Snippet injection を使わない手はない」
+
+これで Google Search Console の設定は完了です。
+
 ## Google Search Console 設定完了の確認
 
 ## ブログの掲載順位改善
