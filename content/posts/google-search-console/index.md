@@ -1,7 +1,7 @@
 ---
 title: "ブログに Google Search Console を設定しました"
-date: 2021-02-15T19:00:00+09:00
-lastmod: 2021-02-15T19:00:00+09:00
+date: 2021-02-25T19:00:00+09:00
+lastmod: 2021-02-25T19:00:00+09:00
 draft: false
 description: "su2umaru (すずまる) です。ブログに Google Search Console を設定しました。Hugo + Netlify で開発したサイトに Google Search Console を設定する方法を書きます。"
 
