@@ -20,3 +20,15 @@ lightgallery: true
 [@su2umaru](https://twitter.com/su2umaru) です。経済産業省の課題解決型 AI 人材育成プログラム「AI Quest」に参加しました。参加を決めた経緯から修了式までを振り返り、AI Quest で得られた経験を書きます。
 
 <!--more-->
+
+## 経済産業省の課題解決型 AI 人材育成プログラム「AI Quest」
+
+## 参加を決めた経緯
+
+## 第1ターム：PBL (Project Based Learning)
+
+## 第2ターム：企業協働
+
+## AI Quest で得られた経験
+
+## AI Quest を終わらせない
