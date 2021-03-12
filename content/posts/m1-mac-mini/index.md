@@ -20,3 +20,13 @@ lightgallery: true
 [@su2umaru](https://twitter.com/su2umaru) です。M1 Mac mini を購入しました。M1 Mac mini を購入した理由と、M1 Mac mini の初期設定について書きます。
 
 <!--more-->
+
+## M1 Mac mini を購入した理由
+
+## MacBook Pro と M1 Mac mini の比較
+
+## M1 Mac mini の開封
+
+## M1 Mac mini の初期設定
+
+## M1 Mac mini を使い倒す
