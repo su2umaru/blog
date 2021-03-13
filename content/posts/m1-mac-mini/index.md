@@ -125,6 +125,43 @@ Sharing ではコンピュータ名を変更します。
 
 ## プリインストールされているアプリケーションの設定
 
+Mac にはプリインストールされているアプリケーションがあります。それらの設定を行います。
+
+### Finder
+
+Finder Preferences > General から Connected servers をオンにします。また新しいウィンドウの立ち上げをホームディレクトリ(ユーザ名のディレクトリ)に設定します。
+
+Finder Preferences > Sidebar から次の項目をオンにします。
+
+- Recents
+- Applications
+- Downloads
+- ホームディレクトリ(ユーザ名のディレクトリ)
+- External disks
+- CDs, DVDs, and iOS Devices
+- Cloud Storage
+- Bonjour computers
+- Connected Servers
+- Recent tags
+
+Finder Preferences > Advanced から Show all filename extensions をオンにします。
+
+Views > Show Preview をオンにします。
+
+Views > Show Path Bar をオンに、Views > Show Status Bar をオンにします。
+
+Views > Show View Options からテキストサイズを14、Use relative dates をオン、Calculate all sizes をオン、Show icon preview をオンにします。そして Use as Defaults をクリックします。
+
+Views > Customize Toolbar からツールバーに Path を追加します。
+
+### Screenshot
+
+`Command` + `Shift` + `5` で立ち上がり、Options から Show Floating Thumbnail をオフにします。
+
+### App Store
+
+iCloud にログイン後、プリインストールされているアプリケーションをアップデートします。
+
 ## アプリケーションのインストール
 
 ## M1 Mac mini を使い倒す
