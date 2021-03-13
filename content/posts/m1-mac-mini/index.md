@@ -115,7 +115,7 @@ Network では Wi-Fi や VPN を設定します。
 
 Sound では Play sound on startup をオフにします。
 
-Keyboard では Key Repeat を最も速く、Delay Until Repeat を最も短く設定します。また Caps Lock Key に Control を割り当てます。Text では全てのチェックボックスをオフにします。Input Sources では ¥ キーで \ が入力されるよう設定します。
+Keyboard では Key Repeat を最も速く、Delay Until Repeat を最も短く設定します。また Caps Lock Key に Control を割り当てます。Text では全てのチェックボックスをオフにします。Shortcuts では Spotlight のチェックボックスをオフにします。Input Sources では ¥ キーで \ が入力されるよう設定します。
 
 Energy Saver では Turn display off after を3分に設定し、全てのチェックボックスをオフにします。
 
