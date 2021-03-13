@@ -71,6 +71,8 @@ Apple Menu :apple: > System Preferences > Display から Night Shift を設定�
 
 ![クリックの重さとトラッキングスピードを設定](trackpad.png)
 
+また More Gestures の Swipe between pages をオフ、App Expose をオンにします。
+
 ここからは System Preferences に表示されている順に設定します。Apple ID では次の項目をオンにします。
 
 - Notes
@@ -120,6 +122,8 @@ Energy Saver では Turn display off after を3分に設定し、全てのチェ
 Sharing ではコンピュータ名を変更します。
 
 以上で System Preferences から設定できる項目が設定できました。
+
+## プリインストールされているアプリケーションの設定
 
 ## アプリケーションのインストール
 
