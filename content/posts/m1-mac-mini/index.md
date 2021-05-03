@@ -347,3 +347,5 @@ iTerm2 ではフォントに [FiraCode](https://github.com/tonsky/FiraCode)、�
 [Zoom](https://zoom.us/jp-jp/meetings.html) はビデオ会議アプリケーションです。リモートワークが普及してから、一気に有名になりました。今のご時世、Zoom がないと仕事になりません。Zoom がなくても仕事ができる世の中が1日でも早く来ることを待っています。
 
 ## M1 Mac mini を使い倒す
+
+M1 Mac mini の初期設定は以上です。しかし今後の作業内容の変化に伴い、ベストな設定も変化します。適宜、アプリケーションを追加したり、設定を変更したりしていきます。M1 Mac mini を使い倒します。
