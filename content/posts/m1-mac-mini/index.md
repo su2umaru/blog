@@ -164,4 +164,186 @@ iCloud にログイン後、プリインストールされているアプリケ�
 
 ## アプリケーションのインストール
 
+Mac にアプリケーションをインストールします。M1 であることに注意しながらインストールしていきます。アプリケーションが M1 Mac に対応しているか否かは [is apple silicon ready?](https://isapplesiliconready.com/) で確認できます。
+
+![Is Apple silicon ready? の画面](isapplesiliconready.png)
+
+### Google Chrome
+
+まずは [Google Chrome](https://www.google.com/intl/ja/chrome/) です。Safari で Google Chrome って検索するの裏切り感ありますよね。
+
+![Google Chrome のインストール](google-chrome.png)
+
+インストール後、Google Chrome を立ち上げるとデフォルトのブラウザに設定できます。
+
+![Google Chrome をデフォルトのブラウザに設定](default-browser.png)
+
+Google アカウントでログインします。するとブックマークや拡張機能が同期されます。
+
+### Alfred
+
+[Alfred](https://www.alfredapp.com/) は Spotlight のようなランチャーアプリです。アプリケーションの立ち上げに加え、ファイルやフォルダの検索、ブラウザのブックマークの検索、Mac のシステム操作もできます。
+
+M1 Mac 向けに [Apple Universal Build](https://www.alfredapp.com/universal/) が用意されています。
+
+インストール後、Alfred Preferences > General で Alfred Hotkey を `Command` + `Space` に設定します。Where are you に Japan を設定します。Permissions の Accessibility、Full Disk Access、Automation をオンにします。
+
+Alfred Preferences > Features > Default Results で Extras の Folders をオンにします。
+
+Alfred Preferences > Features > Web Bookmarks で Sources の Google Chrome Bookmarks をオンにします。
+
+### Karabiner-Elements
+
+[Karabiner-Elements](https://karabiner-elements.pqrs.org/) はキーボードをカスタマイズするアプリケーションです。僕のキーボードは US 配列なので英数/かな切り替えができません。しかし Karabiner-Elements を使うと、左 Command キーに英数への切り替え、右 Command キーにかなへの切り替えを割り当てられます。
+
+インストール後、Complex modifications で左下の Add rule > Import more rules from the internet (open a web browser) をクリックします。japanese と検索し、For Japanese （日本語環境向けの設定）をインポートします。
+
+![For Japanese （日本語環境向けの設定）をインポート](for-japanese.png)
+
+インポートすると Karabiner-Elements に戻り、インポートした設定が表示されます。
+
+![インポートした設定](all-rules.png)
+
+このうち3つを Enable にします。
+
+- コマンドキーを単体で押したときに、英数・かなキーを送信する。（左コマンドキーは英数、右コマンドキーはかな） (rev 3)
+- escキーを押したときに、英数キーも送信する（vim用）
+- Ctrl+[を押したときに、英数キーも送信する（vim用） (rev 2)
+
+![3つの設定を Enable](import-rules.png)
+
+これで人権を得ました。
+
+同様に Left ctrl + hjkl to Arrow Keys Vim をインポートします。これは左 Ctrl キーと hjkl キーで Vim ライクにカーソルを移動できる設定です。
+
+![Left ctrl + hjkl to Arrow Keys Vim](left-ctrl.png)
+
+![4つの設定を Enable にした Karabiner-Elementes](karabiner-elements-imported-rules.png)
+
+また Fn キーは全て Fn キーとして機能するよう設定します。
+
+![Fn キーを全て Fn キーとして機能するよう設定](function-keys.png)
+
+### Rectangle
+
+[Rectangle](https://rectangleapp.com/) は macOS 用のウィンドウマネージャです。僕はこれまで [ShiftIt](https://github.com/fikovnik/ShiftIt) を愛用していたのですが、開発が止まっているようです。ShiftIt は代わりに [Hammerspoon](http://www.hammerspoon.org/) を勧めていましたが、設定が複雑と思いました。ShiftIt と並んで [Spectacle](https://www.spectacleapp.com/) が有名なようですが、Spectacle も開発が止まっているようです。Spectacle は代わりに Rectangle を勧めていて、Rectangle は GUI で設定できるため Rectangle を選びました。
+
+インストール後、GUI で設定します。
+
+![Rectangle の設定1](rectangle1.png)
+
+![Rectangle の設定2](rectangle2.png)
+
+### Clipy
+
+※[Rosetta](https://support.apple.com/ja-jp/HT211861) をインストールする必要があります。
+
+[Clipy](https://clipy-app.com/) は macOS 用のスニペットアプリです。通常は直近のコピーしかペーストできませんが、Clipy を使うとコピーの履歴を辿れます。またスニペットとして定型文を登録しておくことで、いつでもペーストできます。
+
+インストール後、Clipy を起動すると Rosetta 2 をインストールするよう要求されました。[is apple silicon ready?](https://isapplesiliconready.com/) で確認すると M1 Mac に対応していないようです。代替アプリが見つからなかったので Rosetta 2 をインストールしました。Rosetta 2 をインストールすると無事に Clipy が起動しました。メールアドレスをスニペットとして登録しました。
+
+### AppCleaner
+
+不要になったアプリを削除するときにアプリ本体だけ削除すると設定ファイルが残ってしまいます。設定ファイルごと削除してくれるのが [AppCleaner](https://freemacsoft.net/appcleaner/) です。
+
+インストール後、立ち上げると Drop your apps here という画面が現れます。ここにアプリをドラッグ&ドロップすることで設定ファイルごとアプリを削除できます。
+
+![AppCleaner の画面](appcleaner.png)
+
+### Spark
+
+※[Rosetta](https://support.apple.com/ja-jp/HT211861) をインストールする必要があります。
+
+[Spark](https://sparkmailapp.com/ja) はメールクライアントアプリです。iCloud アカウントと他のメールアドレスが紐付き、各デバイスの Spark で iCloud アカウントにログインするだけで全てのメールアドレスを扱えます。例えば僕が使っていた MacBook Pro の Spark にはメールアドレスが5つ登録されていますが、新しい M1 Mac mini では iCloud アカウントにログインするだけで iCloud アカウントと他の4つも使えます。一方、プリインストールされている Mail アプリだと M1 Mac mini でも5つにログインする必要があります。
+
+[is apple silicon ready?](https://isapplesiliconready.com/) で確認すると Spark も Clipy と同様に M1 Mac に対応していないようです。しかし Clipy のインストール時に Rosetta 2をインストールしたので、何もすることなく Spark をインストールできました。
+
+### Slack
+
+[Slack](https://slack.com/intl/ja-jp/) は言わずと知れたチャットアプリです。所属しているコミュニティごとにワークスペースがあり、Slack がないと仕事になりません。また僕は1人用のワークスペースを開設していて、リマインダーや Incoming Webhook を使っています。
+
+### Microsoft Office
+
+[Microsoft Office](https://www.microsoft.com/ja-jp/microsoft-365) は言わずと知れたオフィススイートです。僕が Microsoft Office を拒んでも、求められるシーンが多々あります。そのためインストールしておきます。ただ Teams は使わないのでインストールしません。
+
+### Amphetamine
+
+[Amphetamine](https://apps.apple.com/jp/app/amphetamine/id937984704?mt=12) はワンクリックで Mac をスリープさせないようにするアプリケーションです。
+
+インストール後、設定します。
+
+![Amphetamineの設定1](amphetamine1.png)
+
+![Amphetamineの設定2](amphetamine2.png)
+
+### Bandwidth+
+
+※[Rosetta](https://support.apple.com/ja-jp/HT211861) をインストールする必要があります。
+
+[Bandwidth+](https://apps.apple.com/jp/app/bandwidth/id490461369?mt=12) は通信量をリアルタイムに表示するアプリです。Mac の動作が止まったときに、CPU が原因かネットワークが原因かわかりません。通信量が十分か否か確認することで、どちらか判断しています。
+
+### Discord
+
+※[Rosetta](https://support.apple.com/ja-jp/HT211861) をインストールする必要があります。
+
+[Discord](https://discord.com/) はゲーマー用のボイスチャットアプリです。
+
+Discord も M1 Mac に対応していません。有名だからといって M1 Mac に対応しているわけではないようです。
+
+### Docker
+
+※[Rosetta](https://support.apple.com/ja-jp/HT211861) をインストールする必要があります。
+
+[Docker](https://www.docker.com/) はコンテナ仮想化を用いてアプリケーションを開発、実行するためのソフトウェアです。Docker がないと仕事になりません。
+
+### Fuwari
+
+※[Rosetta](https://support.apple.com/ja-jp/HT211861) をインストールする必要があります。
+
+[Fuwari](https://fuwari-app.com/) はスクリーンショット拡張アプリです。画面の任意の範囲を一時的に最前面に配置できます。
+
+### バックアップと同期
+
+※[Rosetta](https://support.apple.com/ja-jp/HT211861) をインストールする必要があります。
+
+[バックアップと同期](https://support.google.com/drive/answer/2374987?hl=ja)は Google ドライブでパソコンのファイルをバックアップして同期するアプリケーションです。同期するフォルダを指定すれば、フォルダの中身が変わったタイミングで自動的に Google ドライブと同期してくれます。
+
+以前は[パソコン版 Google ドライブ](https://support.google.com/a/answer/7491144?utm_medium=et&utm_source=aboutdrive&utm_content=getstarted&utm_campaign=en_us&hl=ja)を使っていましたが、定期的に手動で同期しなければならないのが手間でした。そのため今回はバックアップと同期をインストールしました。
+
+### iTerm2
+
+[iTerm2](https://iterm2.com/) は macOS 用のターミナルエミュレータです。Mac には Terminal.app がプリインストールされていますが、iTerm2 の方が見た目やショートカットの豊富さで優れています。
+
+iTerm2 ではフォントに [FiraCode](https://github.com/tonsky/FiraCode)、カラーに [Dracula](https://draculatheme.com/iterm)、プラグインマネージャに [Prezto](https://github.com/sorin-ionescu/prezto)、テーマに [Powerlevel10k](https://github.com/romkatv/powerlevel10k) を使っています。
+
+### MeetingBar
+
+[MeetingBar](https://github.com/leits/MeetingBar) は Mac のメニューバーにカレンダーの予定を表示するアプリケーションです。MeetingBar を起動するとどのカレンダーの予定を表示するか選択しなければならないため、先に Mac の Calendar.app を設定しておきます。Calendar.app には Google カレンダーを読み込ませます。
+
+### Notion
+
+[Notion](https://www.notion.so/) はドキュメント管理アプリケーションです。The all-in-one workspace と謳っていて、多様なデータをそれぞれに適した形で管理することができます。僕は日記、タスク管理、リーディングリストに使っています。
+
+デフォルトではカラーが Light になっているため、System Preference に合わせます。
+
+### RunCat
+
+[RunCat](https://kyome.io/runcat/) は Mac のメニューバー~~でネコを飼う~~に CPU 使用率を表示するアプリです。ちなみに僕は良い夢を見られるように羊を飼っています。
+
+### Snap Camera
+
+[Snap Camera](https://snapcamera.snapchat.com/) はカメラアプリです。オンライン会議で加工したり背景を設定したりできます。Snap Camera で加工、Zoom で背景を設定、という使い方もできます。
+
+### TweetDeck
+
+[TweetDeck](https://tweetdeck.twitter.com/) は複数のタイムラインを統合できるアプリケーションです。複数の Twitter アカウントの管理、ツイートの予約投稿、ツイートのコレクションの作成、といった高度な機能が用意されています。
+
+### Visual Studio Code
+
+[Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/) はとりあえず入れておけば間違いない強力で軽量なエディタです。VSCode がないと仕事になりません。GitHub アカウントで同期すると設定と拡張機能を同期できます。
+
+### Zoom
+
+[Zoom](https://zoom.us/jp-jp/meetings.html) はビデオ会議アプリケーションです。リモートワークが普及してから、一気に有名になりました。今のご時世、Zoom がないと仕事になりません。Zoom がなくても仕事ができる世の中が1日でも早く来ることを待っています。
+
 ## M1 Mac mini を使い倒す
