@@ -1,7 +1,7 @@
 ---
 title: "M1 Mac mini を購入しました"
-date: 2021-03-12T19:00:00+09:00
-lastmod: 2021-03-12T19:00:00+09:00
+date: 2021-05-03T19:00:00+09:00
+lastmod: 2021-05-03T19:00:00+09:00
 draft: false
 description: "su2umaru (すずまる) です。M1 Mac mini を購入しました。M1 Mac mini を購入した理由と、M1 Mac mini の初期設定について書きます。"
 
