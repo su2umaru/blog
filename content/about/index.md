@@ -18,6 +18,8 @@ GitHub: [su2umaru](https://github.com/su2umaru)
 
 Twitter: [su2umaru](https://twitter.com/su2umaru)
 
+Lapras: [su2umaru](https://lapras.com/public/OKFGYJ4)
+
 ## :rocket: Experiences
 
 2017/11: DISCO presents DISCOVERY CHANNEL CODE CONTEST 2017
@@ -33,6 +35,8 @@ Twitter: [su2umaru](https://twitter.com/su2umaru)
 2019/10 - 2019/11: 株式会社リクルート インターンシップ
 
 2020/10 - 2021/02: AI Quest
+
+2021/04 - : ソフトバンクアカデミア
 
 ## :trophy: Awards
 
