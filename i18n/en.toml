@@ -14,7 +14,7 @@ other = "View Comments"
 other = "Posts"
 
 [navNext]
-other = ""
+other = "Next article"
 
 [navPrev]
 other = "Previous article"
